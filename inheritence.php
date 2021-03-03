@@ -29,8 +29,8 @@ class Produk {
 }
 
 class Komik extends Produk {
-    public function getInfoKomik() {
-        $str = "Komik : {$this->getInfoProduk()} - {$this->jmlHalaman} halaman.";
+    public function getInfoProduk() {
+        $str = "Komik : {$this->judul} | {$this->getlabel()} (Rp. {$this->harga}) - {$this->jmlHalaman} halaman.";
         return $str;
     }
 }
@@ -54,6 +54,6 @@ $produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100, 0
 
 $produk2 = new Game("Uncharted", "Neil Druckman", "Sony Computer", 250000, 0, 50);
 
-echo $produk1->getInfoKomik();
+echo $produk1->getInfoProduk();
 echo "<br>";
 echo $produk2->getInfoProduk();
