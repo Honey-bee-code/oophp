@@ -34,10 +34,6 @@ class Produk {
     }
 }
 
-class Komik extends Produk {
-    
-}
-
 
 class CetakInfoProduk {
     public function cetak(Produk $produk){
